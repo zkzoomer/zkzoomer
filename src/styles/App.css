@@ -1,0 +1,25 @@
+* {
+  text-align: center;
+  font-family: 'Inter Regular';
+  margin: 0;
+  color: var(--main-text);
+  text-decoration: none;
+}
+
+:root {
+  --title-text: #538BA3;
+  --main-text: #1D313A;
+  --sidebar-backgound: #e8c547;
+  --main-background: #E6EFF2;
+  --dark-background: #BBD4DC;
+  --light-background-2: #4E484E;
+  --light-background-3: #817781;
+  --transition-background: #1A181A;
+  --divider: #BA584F;
+  --button: #CCD12E;
+  --button-alt: #CFD43D;
+  --disabled-button: #BBC03F;
+  --button-text: #0A0A0A;
+  --error: #D1342F;
+  --test: #0A0A0A;
+}
