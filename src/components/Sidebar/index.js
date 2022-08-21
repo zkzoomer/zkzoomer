@@ -2,12 +2,12 @@ import React from 'react';
 import { useSelector, useDispatch } from "react-redux"
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { FaTwitter, FaGithub, FaFish, FaEnvelope } from 'react-icons/fa';
 
 import useClickOutside from '../../hooks/useClickOutside';
 import { setIsOpen } from '../../state/sidebar/reducer';
 import { MenuList } from '../../pages/menuList';
 import { theme } from '../../styles';
+import ReachOut from '../ReachOut';
 
 const SidebarWrapper = styled.aside`
     position: fixed;
@@ -70,41 +70,12 @@ const IconWrapper = styled.div`
         transform: rotate(300000deg);
         transition: transform 999s;
     }
-`
 
-const SidebarAbout = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    padding-bottom: 15px;
-`
-
-const SidebarAboutText = styled.div`
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    padding-bottom: 15px;
-`
-
-const IconLink = styled.a`
-    color: var(--light-text);
-    font-size: 24px;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    padding: 0 10px 0 10px;
-
-    transform: rotate(0deg);
-    transition: transform 999s 999s;
-    &:hover {   
-        transform: rotate(300000deg);
-        transition: transform 999s;
+    > * {
+        height: 100%;
     }
 `
 
-// TODO: make icons stay at rotated position
 export default function Sidebar() {
     const isOpen = useSelector(state => state.sidebar.isOpen);
     const dispatch = useDispatch();
@@ -133,27 +104,7 @@ export default function Sidebar() {
                     { menuList }
                 </SidebarMenu>
             </div>
-            <SidebarAbout>
-                <SidebarAboutText>
-                    reach out here:
-                </SidebarAboutText>
-                <SidebarAboutText>
-                    <IconLink href='https://twitter.com/0xdeenz' target='_blank' aria_label='Twitter'>
-                        <FaTwitter />
-                    </IconLink>
-                    <IconLink href='https://github.com/0xdeenz' target='_blank' aria_label='Github'>
-                        <FaGithub />
-                    </IconLink>
-                    <IconLink href='mailto:sergion@deenz.dev' target='_blank' aria_label='Mail'>
-                        <FaEnvelope />
-                    </IconLink>
-                </SidebarAboutText>
-            </SidebarAbout>
+            <ReachOut />
         </SidebarWrapper>
     )
 }
-
-
-
-
-// https://youtu.be/eWO1b6EoCnQ

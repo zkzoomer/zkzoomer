@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { useDispatch } from 'react-redux'
 import useScrollPosition from '@react-hook/window-scroll'
 import { useSelector } from "react-redux"
@@ -6,6 +6,7 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 import { setIsOpen } from '../../state/sidebar/reducer';
 import { theme } from '../../styles';
+import { NavLink } from 'react-router-dom'
 
 
 const HeaderWrapper = styled.div`
@@ -21,9 +22,6 @@ const HeaderWrapper = styled.div`
     background-color: ${({showBackground}) => (showBackground ? `var(--dark-background)` : `var(--main-background)`)};
     transition: 0.2s all ease;
 
-    @media screen and (max-width: ${theme.breakpoint}px) {
-        padding: 0px 20px 0 20px;
-    }
 `
 
 const AppButtons = styled.div`
@@ -41,10 +39,11 @@ const AppButtons = styled.div`
     }
 `
 
-const LogoWrapper = styled.div`
+const LogoWrapper = styled(NavLink)`
     font-size: 4rem;
     font-family: 'Glossy Sheen Shadow';
     color: var(--title-text);
+    cursor: pointer;
 
     transition: 0.2s ease-in-out;
     margin-right: ${({ isOpen }) => (isOpen ? `${theme.sidebar_width}px` : `0px`)};
@@ -93,7 +92,7 @@ export default function Header () {
     function OpenSidebarIcon () {
         return (
             <SidebarButton >
-                <Open sidebarIsOpen={sidebarIsOpen} onClick={toggleOpen}/>
+                <Open onClick={toggleOpen}/>
             </SidebarButton>
         )
     }
@@ -101,7 +100,7 @@ export default function Header () {
     function CloseSidebarIcon () {
         return (
             <SidebarButton >
-                <Close sidebarIsOpen={sidebarIsOpen} onClick={toggleOpen}/>
+                <Close onClick={toggleOpen}/>
             </SidebarButton>
         )
     }
@@ -111,7 +110,7 @@ export default function Header () {
             <AppButtons isOpen={sidebarIsOpen}>
                 { sidebarIsOpen ? <CloseSidebarIcon onClick={toggleOpen}/> : <OpenSidebarIcon onClick={toggleOpen}/> }
             </AppButtons>
-            <LogoWrapper isOpen={sidebarIsOpen}>
+            <LogoWrapper isOpen={sidebarIsOpen} exact="true" to="/">
                 DEENZ.DEV
             </LogoWrapper>
             <WalletWrapper>
