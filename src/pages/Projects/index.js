@@ -37,7 +37,7 @@ const ListWrapper = styled.div`
 
 export default function Projects () {
 
-    const projectList = projectsInfo.map(({ title, description, image, link, repo }, index) => {
+    const projectList = projectsInfo.map(({ title, description, image, link, repo, prizes }, index) => {
         return(
             <SectionBox
                 key={index}
@@ -47,6 +47,7 @@ export default function Projects () {
                 image={image}
                 link={link}
                 repo={repo}
+                prizes={prizes}
             />
         );
     });

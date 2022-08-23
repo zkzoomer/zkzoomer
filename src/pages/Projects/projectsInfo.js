@@ -1,3 +1,31 @@
+import styled from 'styled-components'
+import { FaTrophy } from 'react-icons/fa'
+
+const PrizeContent = styled.a`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter ExtraLightItalic';
+    padding-bottom: 5px;
+
+    > * {
+        padding-left: 5px; 
+        padding-right: 5px;
+    }
+`
+
+const BronzeTrophy = styled(FaTrophy)`
+    filter: invert(37%) sepia(27%) saturate(1161%) hue-rotate(308deg) brightness(91%) contrast(77%);
+`
+
+const OtherTrophy = styled(FaTrophy)`
+    filter: invert(56%) sepia(62%) saturate(320%) hue-rotate(153deg) brightness(80%) contrast(81%);
+`
+
+const TrophyText = styled.div`
+`
+
 export const projectsInfo = [
     {
         title: 'Dorsia Club',
@@ -15,6 +43,14 @@ export const projectsInfo = [
         image: require('../../images/dorsiaclub-cards.gif'),
         link: 'https://dorsiaclub.netlify.app/',
         repo: 'https://github.com/0xdeenz/dorsiaclub',
+        prizes: (
+            <>
+                <PrizeContent href='https://devpost.com/software/dorsia-club' target='_blank' rel="noreferrer">
+                    <BronzeTrophy />
+                        Third Place @ Web3 Infinity Hackathon
+                </PrizeContent>
+            </>
+        )
     },
     {
         title: 'Block Qualified',
@@ -35,6 +71,14 @@ export const projectsInfo = [
         image: require('../../images/block-qualified-logo.png'),
         link: 'https://blockqualified.netlify.app/',
         repo: 'https://github.com/0xdeenz/bq',
+        prizes: (
+            <>
+                <PrizeContent href='https://devpost.com/software/block-qualified' target='_blank' rel="noreferrer">
+                    <OtherTrophy />
+                        Top 30 @ Web3 Infinity Hackathon
+                </PrizeContent>
+            </>
+        )
     },
     {
         title: 'rollup-demo',
@@ -51,5 +95,6 @@ export const projectsInfo = [
         image: require('../../images/rollup-demo.png'),
         link: null,
         repo: 'https://github.com/0xdeenz/rollup-demo',
+        prizes: null,
     }
 ]

@@ -7,7 +7,7 @@ const BoxWrapper = styled.div`
     width: 100%;
     display: flex;
     flex-direction: ${({order}) => (order === 0 ? `row` : `row-reverse`)};
-    align-items: center;
+    align-items: start;
     justify-content: center; 
 
     border-radius: 5px;
@@ -20,12 +20,13 @@ const BoxWrapper = styled.div`
 
     @media screen and (max-width: ${theme.breakpoint}px) {
         flex-direction: column;
+        align-items: center;
         padding: 0;
     }
 `
 
 const ImageWrapper = styled.div`
-    height: 220px;
+    height: 100%;
     width: 30%;
     padding: 0px;
     
@@ -38,15 +39,28 @@ const ImageWrapper = styled.div`
     }
 `
 
+const PrizeWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+`
+
 const Image = styled.img`
-    height: 100%;
+    height: 220px;
     width: 100%;
     object-fit: contain;
     cursor: pointer;
     filter: drop-shadow(2px 2px 5px var(--main-text));
+
+    @media screen and (max-width: ${theme.breakpoint}px) {
+        width: 90%;
+    }
 `
 
 const ContentWrapper = styled.div`
+    height: 100%;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -110,7 +124,7 @@ const DescriptionWrapper = styled.div`
     text-justify: inter-word;
 `
 
-export default function SectionBox ({ id, title, description, image, link, repo }) {
+export default function SectionBox ({ id, title, description, image, link, repo, prizes }) {
 
     return(
         <BoxWrapper order={id % 2}>
@@ -118,6 +132,9 @@ export default function SectionBox ({ id, title, description, image, link, repo 
                 <a href={link ?? repo} target='_blank' rel="noreferrer">
                     <Image src={image} />
                 </a>
+                <PrizeWrapper>
+                    {prizes}
+                </PrizeWrapper>
             </ImageWrapper>
             <ContentWrapper>
                 <TopRow>
