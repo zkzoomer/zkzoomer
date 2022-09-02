@@ -11,7 +11,7 @@ const BoxWrapper = styled.div`
     justify-content: center; 
 
     border-radius: 5px;
-    padding: 15px;
+    padding: 20px 15px 20px 15px;
 
     margin: 25px 0px 25px 0px;
     box-shadow: 2px 2px 2px 1px var(--main-text);
@@ -40,6 +40,14 @@ const ImageWrapper = styled.div`
 `
 
 const PrizeWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+`
+
+const FootnoteWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +101,15 @@ const TitleWrapper = styled.div`
     padding-bottom: 10px;
 `
 
+const SubtitleWrapper = styled.div`
+    width: 100%;
+    font-family: 'Inter BoldItalic';
+    text-align: start;
+    font-size: 1.5rem;
+    color: var(--title-text);
+    padding-bottom: 20px;
+`
+
 const IconsWrapper = styled.div`
     width: 100%;
     display: flex;
@@ -123,9 +140,7 @@ const DescriptionWrapper = styled.div`
     text-align: justify;
     text-justify: inter-word;
 `
-
-export default function SectionBox ({ id, title, description, image, link, repo, prizes }) {
-
+function ProjectBox ({ id, title, description, image, link, repo, prizes }) {
     return(
         <BoxWrapper order={id % 2}>
             <ImageWrapper>
@@ -159,3 +174,23 @@ export default function SectionBox ({ id, title, description, image, link, repo,
         </BoxWrapper>
     )
 }
+
+function AboutBox ({ id, title, subtitle, description, image, footnote }) {
+    return(
+        <BoxWrapper order={id % 2}>
+            <ImageWrapper>
+                <Image src={image} />
+                <FootnoteWrapper>
+                    {footnote}
+                </FootnoteWrapper>
+            </ImageWrapper>
+            <ContentWrapper>
+                <TitleWrapper>{title}</TitleWrapper>
+                <SubtitleWrapper>{subtitle}</SubtitleWrapper>
+                <DescriptionWrapper>{description}</DescriptionWrapper>
+            </ContentWrapper>
+        </BoxWrapper>
+    )
+}
+
+export { ProjectBox, AboutBox }

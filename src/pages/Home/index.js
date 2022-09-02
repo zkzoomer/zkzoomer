@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { FaCode } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { FaCode, FaUserAlt } from "react-icons/fa";
 
 import { theme } from "../../styles";
-import { NavLink } from "react-router-dom";
 import ReachOut from "../../components/ReachOut";
 
 const HomeWrapper = styled.div`
@@ -100,10 +100,10 @@ const InlineBold = styled.span`
 `
 
 const LinksWrapper = styled.div`
-    width: 30%;
+    width: 20%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 80px;
 
     @media screen and (max-width: ${theme.breakpoint}px) {
@@ -165,11 +165,11 @@ const links = [
       url: "/articles",
       icon: <FaRegFile />
     }, */
-    /* {
+    {
       title: "About",
       url: "/about",
       icon: <FaUserAlt />,
-    }, */
+    },
 ];
 
 export default function Home () {

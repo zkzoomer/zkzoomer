@@ -1,4 +1,4 @@
-import { FaHome, FaCode } from 'react-icons/fa';
+import { FaHome, FaCode, FaUserAlt } from 'react-icons/fa';
 
 export const MenuList = [
     {
@@ -16,9 +16,9 @@ export const MenuList = [
       url: "/articles",
       icon: <FaRegFile />
     }, */
-    /* {
+    {
       title: "About",
       url: "/about",
       icon: <FaUserAlt />,
-    }, */
+    },
 ];

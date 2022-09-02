@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import SectionBox from "../../components/SectionBox";
 
+import { ProjectBox } from "../../components/SectionBox";
 import { theme } from "../../styles";
 import { projectsInfo } from "./projectsInfo";
 
@@ -39,7 +39,7 @@ export default function Projects () {
 
     const projectList = projectsInfo.map(({ title, description, image, link, repo, prizes }, index) => {
         return(
-            <SectionBox
+            <ProjectBox
                 key={index}
                 id={index}
                 title={title}
