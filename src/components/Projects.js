@@ -13,7 +13,7 @@ const Projects = () => {
                 <div className="projects__card">
                     <h3>Block Qualified</h3>
                     <img src={block_qualified} alt="Block Qualified" />
-                    <figcaption><a href="https://www.youtube.com/watch?v=ruFmzH4CoIw&t=7393s" target='_blank' rel="noreferrer">2nd Place at ZKP / Web3 Hackathon</a></figcaption>
+                    <figcaption><a href="https://zk-hacking.org/" target='_blank' rel="noreferrer">2nd Place at ZKP / Web3 Hackathon</a></figcaption>
                     <p>
                         Originally a hackathon project, I obtained a grant from the Ethereum Foundation's PSE team to develop a decentralized, private, and verifiable education platform using Semaphore.
                         <br/><br/>
