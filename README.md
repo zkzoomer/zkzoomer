@@ -1,5 +1,7 @@
 ### gm
 
+Zero-Knowledge Circuit Engineer at [Term Structure](https://termstructure.com/)
+
 <div id="badges">
   <a href="https://twitter.com/0xdeenz" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
