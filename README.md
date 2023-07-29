@@ -1,6 +1,6 @@
 ### gm
 
-Zero-Knowledge Circuit Engineer at [Term Structure](https://termstructure.com/)
+ZK Circuit Engineer at [Term Structure](https://termstructure.com/)
 
 <div id="badges">
   <a href="https://twitter.com/0xdeenz" target="_blank" rel="noreferrer">
