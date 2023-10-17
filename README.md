@@ -1,4 +1,4 @@
-### gm
+**gm**
 
 ZK Circuit Engineer at [Term Structure](https://termstructure.com/)
 
