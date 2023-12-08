@@ -1,6 +1,6 @@
 **gm**
 
-ZK Circuit Engineer at [Term Structure](https://termstructure.com/)
+ZK Circuit Engineer at [Term Structure](https://ts.finance)
 
 <div id="badges">
   <a href="https://twitter.com/zkzoomer" target="_blank" rel="noreferrer">
