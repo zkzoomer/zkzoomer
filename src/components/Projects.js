@@ -22,7 +22,7 @@ const Projects = () => {
 
                     <div className="button__container">
                         <a href="https://bq2.netlify.app/" target="_blank" rel="noreferrer" className="button">Site</a>
-                        <a href="https://github.com/0xdeenz/bq2" target="_blank" rel="noreferrer" className="button">Code</a>
+                        <a href="https://github.com/zkzoomer/bq2" target="_blank" rel="noreferrer" className="button">Code</a>
                     </div>
                 </div>
 
@@ -37,8 +37,8 @@ const Projects = () => {
                     </p>
 
                     <div className="button__container">
-                        <a href="https://github.com/0xdeenz/rollup-demo" target="_blank" rel="noreferrer" className="button">Code #1</a>
-                        <a href="https://github.com/0xdeenz/congestion-control" target="_blank" rel="noreferrer" className="button">Code #2</a>
+                        <a href="https://github.com/zkzoomer/rollup-demo" target="_blank" rel="noreferrer" className="button">Code #1</a>
+                        <a href="https://github.com/zkzoomer/congestion-control" target="_blank" rel="noreferrer" className="button">Code #2</a>
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ const Projects = () => {
                     </p>
                     <div className="button__container">
                         <a href="https://dorsiaclub.netlify.app/" target="_blank" rel="noreferrer" className="button">Site</a>
-                        <a href="https://github.com/0xdeenz/dorsiaclub" target="_blank" className="button" rel="noreferrer">Code</a>
+                        <a href="https://github.com/zkzoomer/dorsiaclub" target="_blank" className="button" rel="noreferrer">Code</a>
                     </div>
                 </div>
             </div>
