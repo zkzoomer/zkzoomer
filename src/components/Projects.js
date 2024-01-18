@@ -29,7 +29,7 @@ const Projects = () => {
                 <div className="projects__card">
                     <h3>ZK-Rollup</h3>
                     <img src={rollup_demo} alt="ZK-Rollup" />
-                    <figcaption><a href="https://uniswap.org/" target='_blank' rel="noreferrer">&nbsp;</a></figcaption>
+                    <figcaption><a href="https://ieeexplore.ieee.org/document/10316965" target='_blank' rel="noreferrer">Published as IEEE Conference Paper</a></figcaption>
                     <p>
                         Research project on ZK Rollups for non-financial applications. Originally built a payment channel with 140x throughput, later studied verifiable congestion control algorithms.
                         <br/><br/>
