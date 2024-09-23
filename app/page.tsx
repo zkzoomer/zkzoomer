@@ -16,16 +16,14 @@ export default function Page() {
   return (
     <ContainerLayout className="flex flex-col space-y-4">
       <Header />
-      <Accordion.Root type="single" defaultValue="About">
-        <div className="grid gap-4">
-          <About />
-          <WorkExperience />
-          <Education />
-          <Grants />
-          <Hackathons />
-          <Community />
-          <Publications />
-        </div>
+      <Accordion.Root type="single" defaultValue="About" className="grid gap-4">
+        <About />
+        <WorkExperience />
+        <Education />
+        <Grants />
+        <Hackathons />
+        <Community />
+        <Publications />
       </Accordion.Root>
     </ContainerLayout>
   );
