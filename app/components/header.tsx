@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         <div>
           <div className="text-base font-semibold md:text-2xl">Sergio Martínez / zkzoomer</div>
           <span className="mt-0.5 text-sm text-gray-11 md:mt-1 md:text-base">
-            ZK / Blockchain Developer
+            ZK / Blockchain Engineer
           </span>
         </div>
       </div>
