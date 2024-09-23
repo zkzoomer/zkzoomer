@@ -1,4 +1,3 @@
-
 ## Local development
 
 ### Installation
