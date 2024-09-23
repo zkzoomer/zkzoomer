@@ -76,27 +76,6 @@ const ResumeItem: React.FC<ResumeItemProps> = ({
             )}
           </div>
         </div>
-        {/* <div className="ml-1.5 mr-1">
-          <div className="line-clamp-1 mr-1 text-ellipsis font-medium text-gray-12 text-right">{dates}</div>
-          <div className="flex flex-row justify-end  h-6">
-            {
-              websiteLink ? 
-                <IconButton href={websiteLink} className="flex w-6" variant='ghost' newTab>
-                  <Globe />
-                </IconButton>
-              :
-                <div className="" />
-            }
-            {
-              githubLink ? 
-                <IconButton href={githubLink} className="flex w-6" variant='ghost' newTab>
-                  <Github />
-                </IconButton>
-              :
-                <div className="f" />
-            }
-          </div>
-        </div> */}
       </div>
     </div>
   );
