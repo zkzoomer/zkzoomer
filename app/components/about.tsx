@@ -8,7 +8,7 @@ const aboutText = (
     strong problem-solving background in aerospace. I have led the design of cost-efficient
     protocols and custom ZK VMs, with an emphasis in upgradeability.
     <div className="h-2" />
-    Freedom and Ethereum maximalist looking to push the limits of programmable money.
+    Freedom maximalist looking to push the limits of programmable money.
   </div>
 );
 
