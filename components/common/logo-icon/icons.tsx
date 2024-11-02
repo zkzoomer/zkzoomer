@@ -54,6 +54,19 @@ export const BerkeleyIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   );
 };
 
+export const BitcoinOSIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
+  return (
+    <Link href="https://www.bitcoinos.build/" rel="noopener noreferrer" target="_blank">
+      <Image
+        src={require('@/components/common/logo-image/bitcoinos-logo.png')}
+        alt="BitcoinOS"
+        width={24}
+        height={24}
+      />
+    </Link>
+  );
+};
+
 export const EthereumFoundationIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://ethereum.org/en/" rel="noopener noreferrer" target="_blank">

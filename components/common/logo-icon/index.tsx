@@ -1,6 +1,7 @@
 import {
   AirbusIcon,
   BerkeleyIcon,
+  BitcoinOSIcon,
   EthereumFoundationIcon,
   EthereumIcon,
   EthGlobalIcon,
@@ -22,6 +23,7 @@ const LogoIcon = {
   Ethereum: EthereumIcon,
   Airbus: AirbusIcon,
   Berkeley: BerkeleyIcon,
+  BitcoinOS: BitcoinOSIcon,
   EthereumFoundation: EthereumFoundationIcon,
   EthGlobal: EthGlobalIcon,
   Ieee: IeeeIcon,
