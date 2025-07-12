@@ -10,12 +10,12 @@ const WorkExperience: React.FC = () => {
       name="Work"
       items={[
         {
-          symbol: <LogoIcon.BitcoinOS />,
-          name: 'ZK / Blockchain Engineer',
-          description: 'Bitcoin OS',
+          symbol: <LogoIcon.MatterLabs />,
+          name: 'Senior Protocol Engineer',
+          description: 'Matter Labs',
           location: 'Remote',
-          dates: '2024-',
-          githubLink: 'https://github.com/bitsnark/',
+          dates: '2025-',
+          githubLink: 'https://github.com/matter-labs/',
         },
         {
           symbol: <LogoIcon.TermStructure />,

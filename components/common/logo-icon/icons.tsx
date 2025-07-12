@@ -1,6 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Import images statically for better performance
+import airbusLogo from '@/components/common/logo-image/airbus-logo.png';
+import berkeleyLogo from '@/components/common/logo-image/berkeley-logo.png';
+import ethereumFoundationLogo from '@/components/common/logo-image/ethereum-foundation-logo.png';
+import ethglobalLogo from '@/components/common/logo-image/ethglobal-logo.png';
+import ieeeLogo from '@/components/common/logo-image/ieee-logo.png';
+import isaeLogo from '@/components/common/logo-image/isae-logo.png';
+import matterLabsLogo from '@/components/common/logo-image/matter-labs-logo.png';
+import minaFoundationLogo from '@/components/common/logo-image/mina-foundation-logo.png';
+import protocolLabsLogo from '@/components/common/logo-image/protocol-labs-logo.png';
+import succinctLogo from '@/components/common/logo-image/succinct-logo.png';
+import termStructureLogo from '@/components/common/logo-image/term-structure-logo.png';
+import upmLogo from '@/components/common/logo-image/upm-logo.png';
+
 export const EthereumIcon: React.FC<JSX.IntrinsicElements['svg']> = ({ className, ...rest }) => {
   return (
     <svg
@@ -31,12 +45,7 @@ export const EthereumIcon: React.FC<JSX.IntrinsicElements['svg']> = ({ className
 export const AirbusIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://airbus.com" rel="noopener noreferrer" target="_blank">
-      <Image
-        src={require('@/components/common/logo-image/airbus-logo.png')}
-        alt="Airbus"
-        width={24}
-        height={24}
-      />
+      <Image src={airbusLogo} alt="Airbus" width={24} height={24} priority={false} loading="lazy" />
     </Link>
   );
 };
@@ -45,23 +54,12 @@ export const BerkeleyIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://rdi.berkeley.edu/course/zkp/s23" rel="noopener noreferrer" target="_blank">
       <Image
-        src={require('@/components/common/logo-image/berkeley-logo.png')}
+        src={berkeleyLogo}
         alt="Berkeley"
         width={24}
         height={24}
-      />
-    </Link>
-  );
-};
-
-export const BitcoinOSIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
-  return (
-    <Link href="https://www.bitcoinos.build/" rel="noopener noreferrer" target="_blank">
-      <Image
-        src={require('@/components/common/logo-image/bitcoinos-logo.png')}
-        alt="BitcoinOS"
-        width={24}
-        height={24}
+        priority={false}
+        loading="lazy"
       />
     </Link>
   );
@@ -71,10 +69,12 @@ export const EthereumFoundationIcon: React.FC<JSX.IntrinsicElements['svg']> = ()
   return (
     <Link href="https://ethereum.org/en/" rel="noopener noreferrer" target="_blank">
       <Image
-        src={require('@/components/common/logo-image/ethereum-foundation-logo.png')}
+        src={ethereumFoundationLogo}
         alt="Ethereum"
         width={24}
         height={24}
+        priority={false}
+        loading="lazy"
       />
     </Link>
   );
@@ -84,10 +84,12 @@ export const EthGlobalIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://ethglobal.com/" rel="noopener noreferrer" target="_blank">
       <Image
-        src={require('@/components/common/logo-image/ethglobal-logo.png')}
+        src={ethglobalLogo}
         alt="EthGlobal"
         width={24}
         height={24}
+        priority={false}
+        loading="lazy"
       />
     </Link>
   );
@@ -96,12 +98,7 @@ export const EthGlobalIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
 export const IeeeIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://www.ieee.org/" rel="noopener noreferrer" target="_blank">
-      <Image
-        src={require('@/components/common/logo-image/ieee-logo.png')}
-        alt="IEEE"
-        width={24}
-        height={24}
-      />
+      <Image src={ieeeLogo} alt="IEEE" width={24} height={24} priority={false} loading="lazy" />
     </Link>
   );
 };
@@ -109,11 +106,21 @@ export const IeeeIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
 export const IsaeIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://www.isae-supaero.fr/en/" rel="noopener noreferrer" target="_blank">
+      <Image src={isaeLogo} alt="ISAE" width={24} height={24} priority={false} loading="lazy" />
+    </Link>
+  );
+};
+
+export const MatterLabsIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
+  return (
+    <Link href="https://www.matter-labs.io/" rel="noopener noreferrer" target="_blank">
       <Image
-        src={require('@/components/common/logo-image/isae-logo.png')}
-        alt="ISAE"
+        src={matterLabsLogo}
+        alt="Matter Labs"
         width={24}
         height={24}
+        priority={false}
+        loading="lazy"
       />
     </Link>
   );
@@ -123,10 +130,12 @@ export const MinaFoundationIcon: React.FC<JSX.IntrinsicElements['svg']> = () => 
   return (
     <Link href="https://minafoundation.com/" rel="noopener noreferrer" target="_blank">
       <Image
-        src={require('@/components/common/logo-image/mina-foundation-logo.png')}
+        src={minaFoundationLogo}
         alt="Mina Foundation"
         width={24}
         height={24}
+        priority={false}
+        loading="lazy"
       />
     </Link>
   );
@@ -136,10 +145,12 @@ export const ProtocolLabsIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://protocol.ai/" rel="noopener noreferrer" target="_blank">
       <Image
-        src={require('@/components/common/logo-image/protocol-labs-logo.png')}
+        src={protocolLabsLogo}
         alt="Protocol Labs"
         width={24}
         height={24}
+        priority={false}
+        loading="lazy"
       />
     </Link>
   );
@@ -149,10 +160,12 @@ export const SuccinctIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://succinct.xyz/" rel="noopener noreferrer" target="_blank">
       <Image
-        src={require('@/components/common/logo-image/succinct-logo.png')}
+        src={succinctLogo}
         alt="Succinct"
         width={24}
         height={24}
+        priority={false}
+        loading="lazy"
       />
     </Link>
   );
@@ -162,10 +175,12 @@ export const TermStructureIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://ts.finance" rel="noopener noreferrer" target="_blank">
       <Image
-        src={require('@/components/common/logo-image/term-structure-logo.png')}
+        src={termStructureLogo}
         alt="Term Structure"
         width={24}
         height={24}
+        priority={false}
+        loading="lazy"
       />
     </Link>
   );
@@ -174,12 +189,7 @@ export const TermStructureIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
 export const UpmIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://www.upm.es/" rel="noopener noreferrer" target="_blank">
-      <Image
-        src={require('@/components/common/logo-image/upm-logo.png')}
-        alt="UPM"
-        width={24}
-        height={24}
-      />
+      <Image src={upmLogo} alt="UPM" width={24} height={24} priority={false} loading="lazy" />
     </Link>
   );
 };
