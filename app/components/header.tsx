@@ -1,4 +1,4 @@
-import { Github, Send } from 'lucide-react';
+import { Github, Mail, Send } from 'lucide-react';
 
 import ZkzoomerAvatar from '@/components/common/avatar';
 import { Button } from '@/components/ui';
@@ -32,7 +32,14 @@ const Header: React.FC = () => {
         >
           Telegram
         </Button>
-        {/* TODO: add Telegram */}
+        <Button
+          intent="none"
+          className="data-[variant=primary]:bg-orange-7"
+          href="mailto:sergio@zkzoomer.io"
+          leftIcon={<Mail />}
+        >
+          Email
+        </Button>
       </div>
       {/* Links (mobile) */}
       <div className="mt-4 flex w-full space-x-2 md:hidden">
@@ -52,6 +59,15 @@ const Header: React.FC = () => {
           leftIcon={<Send />}
         >
           Telegram
+        </Button>
+        <Button
+          size="md"
+          intent="orange"
+          className="w-full"
+          href="mailto:sergio@zkzoomer.io"
+          leftIcon={<Mail />}
+        >
+          Email
         </Button>
       </div>
     </div>

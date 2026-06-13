@@ -9,12 +9,14 @@ import Header from './components/header';
 import Publications from './components/publications';
 import WorkExperience from './components/work';
 
+import LogoPreloader from '@/components/common/logo-icon/logo-preloader';
 import ContainerLayout from '@/components/layouts/container';
 import { Accordion } from '@/components/ui';
 
 export default function Page() {
   return (
     <ContainerLayout className="flex flex-col space-y-4">
+      <LogoPreloader />
       <Header />
       <Accordion.Root type="single" defaultValue="About" className="grid gap-4">
         <About />

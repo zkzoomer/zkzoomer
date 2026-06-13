@@ -15,6 +15,23 @@ import succinctLogo from '@/components/common/logo-image/succinct-logo.png';
 import termStructureLogo from '@/components/common/logo-image/term-structure-logo.png';
 import upmLogo from '@/components/common/logo-image/upm-logo.png';
 
+// Every logo bitmap, used by `<LogoPreloader />` to warm the browser cache on
+// page load so the images are instant once an accordion section is opened.
+export const logoImages = [
+  airbusLogo,
+  berkeleyLogo,
+  ethereumFoundationLogo,
+  ethglobalLogo,
+  ieeeLogo,
+  isaeLogo,
+  matterLabsLogo,
+  minaFoundationLogo,
+  protocolLabsLogo,
+  succinctLogo,
+  termStructureLogo,
+  upmLogo,
+];
+
 export const EthereumIcon: React.FC<JSX.IntrinsicElements['svg']> = ({ className, ...rest }) => {
   return (
     <svg
@@ -45,7 +62,16 @@ export const EthereumIcon: React.FC<JSX.IntrinsicElements['svg']> = ({ className
 export const AirbusIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
   return (
     <Link href="https://airbus.com" rel="noopener noreferrer" target="_blank">
-      <Image src={airbusLogo} alt="Airbus" width={24} height={24} priority={false} loading="lazy" />
+      <Image
+        src={airbusLogo}
+        alt="Airbus"
+        width={24}
+        height={24}
+        priority={false}
+        loading="lazy"
+        // Logo is dark navy; render it white so it stays visible on the dark bg.
+        className="brightness-0 invert"
+      />
     </Link>
   );
 };
@@ -121,6 +147,8 @@ export const MatterLabsIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
         height={24}
         priority={false}
         loading="lazy"
+        // Logo is dark navy; render it white so it stays visible on the dark bg.
+        className="brightness-0 invert"
       />
     </Link>
   );
