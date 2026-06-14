@@ -38,8 +38,10 @@ export const accordionTriggerChevronStyles = [
   'w-4',
   'shrink-0',
   'text-gray-11',
-  'transition-transform',
+  'transition',
   'duration-200',
+  'group-hover:text-gray-12',
+  'group-data-[state=open]:text-blue-11',
   'group-data-[state=open]:rotate-90',
 ];
 

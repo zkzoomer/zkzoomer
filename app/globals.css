@@ -3,14 +3,36 @@
 @tailwind utilities;
 
 html,
-body,
+body {
+  @apply scroll-pt-28 text-gray-12 md:scroll-pt-20;
+  background: #080809;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
 main {
-  @apply scroll-pt-28 bg-gray-1 text-gray-12 md:scroll-pt-20;
-  font-weight: 300;
+  @apply scroll-pt-28 text-gray-12 md:scroll-pt-20;
+  background: transparent;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(180deg, #111113 0%, #0c0c0d 46%, #080809 100%);
+  background-size:
+    48px 48px,
+    48px 48px,
+    auto;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 68%);
 }
 
 * {
-  @apply selection:bg-[#FF00FF] selection:text-white;
+  @apply selection:bg-blue-9 selection:text-white;
   box-sizing: border-box;
 }
 

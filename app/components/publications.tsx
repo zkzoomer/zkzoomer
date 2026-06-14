@@ -11,8 +11,10 @@ const Publications: React.FC = () => {
       items={[
         {
           symbol: <LogoIcon.Ieee />,
-          name: 'Conference Paper',
-          description: 'IEEE',
+          name: 'IEEE Paper: Proven Transaction Flow Control for zk-Rollups',
+          description: 'Conference Paper',
+          summary:
+            'Presented a verifiable approach to transaction flow control for improving reliability in zk-rollup systems.',
           dates: '2023',
           websiteLink: 'https://ieeexplore.ieee.org/document/10316965',
           githubLink: 'https://github.com/zkzoomer/congestion-control',

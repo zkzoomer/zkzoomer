@@ -22,13 +22,23 @@ const firaCode = LocalFont({
 // Metadata
 // -----------------------------------------------------------------------------
 
-const title = 'zkzoomer';
-const description = 'personal website';
+const title = 'zkzoomer | ZK Protocol Engineer';
+const description =
+  'ZK protocol engineer with an aerospace background, focused on interoperability, upgradeability, and institutional-grade Ethereum scaling.';
 
 export const metadata: Metadata = {
   title,
   description,
-  keywords: ['zkzoomer', 'personal', 'website', 'blog'],
+  keywords: [
+    'zkzoomer',
+    'ZK',
+    'zero knowledge',
+    'protocol engineer',
+    'blockchain',
+    'zk-rollups',
+    'custom ZK VMs',
+    'aerospace engineering',
+  ],
   creator: 'zkzoomer',
   openGraph: {
     title,

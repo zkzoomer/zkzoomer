@@ -1,15 +1,25 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "zkzoomer",
+  "name": "zkzoomer | ZK Protocol Engineer",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/images/logo-40x40.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "400x400",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#080809"
 }
