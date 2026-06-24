@@ -17,7 +17,9 @@ const Publications: React.FC = () => {
             'Presented a verifiable approach to transaction flow control for improving reliability in zk-rollup systems.',
           dates: '2023',
           websiteLink: 'https://ieeexplore.ieee.org/document/10316965',
+          websiteLinkLabel: 'Read Proven Transaction Flow Control for zk-Rollups on IEEE Xplore',
           githubLink: 'https://github.com/zkzoomer/congestion-control',
+          githubLinkLabel: 'View transaction flow control research code on GitHub',
         },
       ]}
     />

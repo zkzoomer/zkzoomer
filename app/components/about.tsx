@@ -4,13 +4,15 @@ import TextSection from '@/components/templates/text-section';
 
 const aboutText = (
   <div>
-    ZK protocol engineer with an aerospace background, currently focused on interoperability and
-    upgradeability for institutional-grade Ethereum scaling. Previously worked on custom ZK VMs,
-    protocol design, and cost-efficient execution paths. Drawn to making complex systems reliable
-    enough to survive contact with production.
+    Senior ZK protocol engineer with an aerospace background. Currently focused on
+    institutional-grade Ethereum infrastructure, interoperability, and upgradeability. I have
+    experience shipping production ZKsync (L2) protocol upgrades across Solidity smart contracts and
+    Rust node infrastructure. Previously worked on custom zkVMs, protocol design, and cost-efficient
+    execution paths.
     <div className="h-2" />
-    Freedom and Ethereum maximalist looking to push the limits of programmable money, with an
-    aerospace bias for systems that keep working under real constraints.
+    Ethereum-aligned and drawn to freedom-preserving technology. Looking to push the limits of
+    programmable money, with an aerospace engineering bias for systems that keep working in the real
+    world.
   </div>
 );
 

@@ -11,7 +11,7 @@ const Education: React.FC = () => {
       items={[
         {
           symbol: <LogoIcon.Isae />,
-          name: 'MSc. Aerospace Engineering',
+          name: 'MSc Aerospace Engineering',
           description: 'ISAE-SUPAERO',
           summary:
             'Major in Embedded Systems. Researched verifiable computation for embedded blockchains.',
@@ -20,10 +20,10 @@ const Education: React.FC = () => {
         },
         {
           symbol: <LogoIcon.Upm />,
-          name: 'BSc. Aerospace Engineering',
+          name: 'BSc Aerospace Engineering',
           description: 'UPM',
           summary:
-            'GPA 8/10 (top 5%), Major in Aerospace Sciences and Technologies. Special distinction in 8 subjects covering Mathematics, Physics, and Computer Science.',
+            'GPA 8/10 (top 10%), Major in Aerospace Sciences and Technologies. Special distinction in 8 subjects covering Mathematics, Physics, and Computer Science.',
           location: 'Spain',
           dates: '2016-21',
         },

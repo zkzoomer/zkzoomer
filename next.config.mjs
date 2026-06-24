@@ -27,6 +27,19 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
+  async headers() {
+    return [
+      {
+        source: '/Sergio_Martinez_CV.pdf',
+        headers: [
+          {
+            key: 'Content-Disposition',
+            value: 'inline; filename="Sergio_Martinez_CV.pdf"',
+          },
+        ],
+      },
+    ];
+  },
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },

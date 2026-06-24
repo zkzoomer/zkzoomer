@@ -8,6 +8,7 @@ import Hackathons from './components/hackathons';
 import Header from './components/header';
 import Interests from './components/interests';
 import Publications from './components/publications';
+import Skills from './components/skills';
 import VectorFieldBackground from './components/vector-field-background';
 import WorkExperience from './components/work';
 
@@ -22,9 +23,10 @@ export default function Page() {
       <ContainerLayout className="flex flex-col space-y-4">
         <LogoPreloader />
         <Header />
-        <Accordion.Root type="single" defaultValue="About" className="grid gap-4">
+        <Accordion.Root type="single" defaultValue="Work" collapsible className="grid gap-4">
           <About />
           <WorkExperience />
+          <Skills />
           <Education />
           <Grants />
           <Hackathons />

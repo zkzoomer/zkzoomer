@@ -13,19 +13,23 @@ const Grants: React.FC = () => {
           symbol: <LogoIcon.MinaFoundation />,
           name: 'Growth Track Grantee',
           description: 'Mina Foundation',
-          summary: 'Developed an account abstraction proof of concept for the Mina Protocol.',
+          summary:
+            'Developed an ERC-4337-inspired standard on the Mina Protocol, enabling account abstraction with non-native signatures.',
           dates: '2024',
           githubLink: 'https://github.com/zkzoomer/minaa',
+          githubLinkLabel: 'View Mina account abstraction proof of concept on GitHub',
         },
         {
           symbol: <LogoIcon.EthereumFoundation />,
           name: 'PSE Grantee',
           description: 'Ethereum Foundation',
           summary:
-            'Built an open and private education platform integrating the Semaphore protocol.',
+            'Built a full-stack decentralized, private, and verifiable education platform integrating the Semaphore protocol.',
           dates: '2023',
           websiteLink: 'https://bq2.netlify.app/',
+          websiteLinkLabel: 'Open private education platform demo',
           githubLink: 'https://github.com/zkzoomer/bq2',
+          githubLinkLabel: 'View private education platform source on GitHub',
         },
       ]}
     />
