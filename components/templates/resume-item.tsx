@@ -59,6 +59,36 @@ const ResumeItem: React.FC<ResumeItemProps> = ({
   const [isProofOpen, setIsProofOpen] = useState(false);
   const defaultWebsiteLinkLabel = `Open website for ${description}: ${name}`;
   const defaultGithubLinkLabel = `Open GitHub for ${description}: ${name}`;
+  const hasLinks = websiteLink || githubLink;
+
+  const renderLinkButtons = () => (
+    <>
+      {websiteLink ? (
+        <IconButton
+          href={websiteLink}
+          aria-label={websiteLinkLabel ?? defaultWebsiteLinkLabel}
+          title={websiteLinkLabel ?? defaultWebsiteLinkLabel}
+          className="flex h-5 w-6 rounded text-gray-11 hover:text-gray-12"
+          variant="ghost"
+          newTab
+        >
+          <Globe />
+        </IconButton>
+      ) : null}
+      {githubLink ? (
+        <IconButton
+          href={githubLink}
+          aria-label={githubLinkLabel ?? defaultGithubLinkLabel}
+          title={githubLinkLabel ?? defaultGithubLinkLabel}
+          className="flex h-5 w-6 rounded text-gray-11 hover:text-gray-12"
+          variant="ghost"
+          newTab
+        >
+          <Github />
+        </IconButton>
+      ) : null}
+    </>
+  );
 
   return (
     <div
@@ -81,6 +111,14 @@ const ResumeItem: React.FC<ResumeItemProps> = ({
             {description}
             {location ? `, ${location}` : ''}
           </div>
+          <div className="mt-1 flex items-center gap-2 sm:hidden">
+            <span className="text-sm font-medium leading-5 text-gray-12">{dates}</span>
+            {hasLinks ? (
+              <span className="flex h-5 flex-row items-center text-sm text-gray-11">
+                {renderLinkButtons()}
+              </span>
+            ) : null}
+          </div>
           {summary ? (
             <p className="mt-1 max-w-[34rem] text-sm leading-5 text-gray-11">{summary}</p>
           ) : null}
@@ -88,40 +126,13 @@ const ResumeItem: React.FC<ResumeItemProps> = ({
       </div>
 
       {/* Dates and links */}
-      <div className="flex items-start pl-[3.25rem] pt-0.5 sm:shrink-0 sm:pl-0">
+      <div className="hidden items-start pt-0.5 sm:flex sm:shrink-0">
         <div>
           <div className="line-clamp-1 text-ellipsis text-left text-sm font-medium text-gray-12 sm:text-right md:text-base">
             {dates}
           </div>
           <div className="line-clamp-1 flex h-5 flex-row justify-start text-ellipsis text-left text-sm text-gray-11 sm:justify-end sm:text-right">
-            {websiteLink ? (
-              <IconButton
-                href={websiteLink}
-                aria-label={websiteLinkLabel ?? defaultWebsiteLinkLabel}
-                title={websiteLinkLabel ?? defaultWebsiteLinkLabel}
-                className="flex h-5 w-6 rounded text-gray-11 hover:text-gray-12"
-                variant="ghost"
-                newTab
-              >
-                <Globe />
-              </IconButton>
-            ) : (
-              <div />
-            )}
-            {githubLink ? (
-              <IconButton
-                href={githubLink}
-                aria-label={githubLinkLabel ?? defaultGithubLinkLabel}
-                title={githubLinkLabel ?? defaultGithubLinkLabel}
-                className="flex h-5 w-6 rounded text-gray-11 hover:text-gray-12"
-                variant="ghost"
-                newTab
-              >
-                <Github />
-              </IconButton>
-            ) : (
-              <div />
-            )}
+            {renderLinkButtons()}
           </div>
         </div>
       </div>

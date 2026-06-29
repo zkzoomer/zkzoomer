@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mt-4 flex w-full flex-nowrap items-center justify-start gap-2 overflow-x-auto md:mt-0 md:w-auto md:shrink-0 md:justify-end md:overflow-visible">
+        <div className="mt-4 flex w-full flex-nowrap items-center justify-end gap-2 overflow-x-auto md:mt-0 md:w-auto md:shrink-0 md:overflow-visible">
           <IconButton
             href="https://github.com/zkzoomer"
             aria-label="Open GitHub profile"
