@@ -22,9 +22,9 @@ const firaCode = LocalFont({
 // Metadata
 // -----------------------------------------------------------------------------
 
-const title = 'zkzoomer | Senior ZK Protocol Engineer';
+const title = 'zkzoomer | Senior ZK/Protocol Engineer';
 const description =
-  'Senior ZK protocol engineer with an aerospace background, focused on interoperability, upgradeability, and institutional-grade Ethereum scaling.';
+  'Senior ZK/protocol engineer with an aerospace background, focused on interoperability, upgradeability, and institutional-grade Ethereum scaling.';
 
 export const metadata: Metadata = {
   title,

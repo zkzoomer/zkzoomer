@@ -4,7 +4,7 @@ import TextSection from '@/components/templates/text-section';
 
 const aboutText = (
   <div>
-    Senior ZK protocol engineer with an aerospace background. Currently focused on
+    Senior ZK/Protocol Engineer with an aerospace background. Currently focused on
     institutional-grade Ethereum infrastructure, interoperability, and upgradeability. I have
     experience shipping production ZKsync (L2) protocol upgrades across Solidity smart contracts and
     Rust node infrastructure. Previously worked on custom zkVMs, protocol design, and cost-efficient
