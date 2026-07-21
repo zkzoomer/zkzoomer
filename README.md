@@ -1,3 +1,3 @@
 **gm**
 
-zk engineer | [zkzoomer.io](https://zkzoomer.io)
+zk/protocol engineer -- [zkzoomer.io](https://zkzoomer.io)
