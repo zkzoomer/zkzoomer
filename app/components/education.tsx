@@ -23,7 +23,7 @@ const Education: React.FC = () => {
           name: 'BSc Aerospace Engineering',
           description: 'UPM',
           summary:
-            'GPA 8/10 (top 10%), Major in Aerospace Sciences and Technologies. Special distinction in 8 subjects covering Mathematics, Physics, and Computer Science.',
+            'GPA 8/10 (top 5%), Major in Aerospace Sciences and Technologies. Special distinction in 8 subjects covering Mathematics, Physics, and Computer Science.',
           location: 'Spain',
           dates: '2016-21',
         },
