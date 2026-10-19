@@ -9,6 +9,7 @@ import ethglobalLogo from '@/components/common/logo-image/ethglobal-logo.png';
 import ieeeLogo from '@/components/common/logo-image/ieee-logo.png';
 import isaeLogo from '@/components/common/logo-image/isae-logo.png';
 import matterLabsLogo from '@/components/common/logo-image/matter-labs-logo.png';
+import micro1Logo from '@/components/common/logo-image/micro1-logo.png';
 import minaFoundationLogo from '@/components/common/logo-image/mina-foundation-logo.png';
 import protocolLabsLogo from '@/components/common/logo-image/protocol-labs-logo.png';
 import succinctLogo from '@/components/common/logo-image/succinct-logo.png';
@@ -25,6 +26,7 @@ export const logoImages = [
   ieeeLogo,
   isaeLogo,
   matterLabsLogo,
+  micro1Logo,
   minaFoundationLogo,
   protocolLabsLogo,
   succinctLogo,
@@ -72,6 +74,29 @@ export const AirbusIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
         // Logo is dark navy; render it white so it stays visible on the dark bg.
         className="brightness-0 invert"
       />
+    </Link>
+  );
+};
+
+export const AlteiaIcon: React.FC<JSX.IntrinsicElements['svg']> = ({ className, ...rest }) => {
+  return (
+    <Link href="https://alteia.com/" rel="noopener noreferrer" target="_blank">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 13.5 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        className={className}
+        {...rest}
+      >
+        <title>Alteia</title>
+        <path
+          d="M2.43328 14.8676H0L5.3568 0.352742H8.15869L13.4953 14.8661H10.9807L9.6309 11.2788H3.76297L2.43403 14.8668L2.43328 14.8676ZM6.68649 2.92366L4.41662 9.24753H8.9765L6.68649 2.92366Z"
+          fill="currentColor"
+        />
+      </svg>
     </Link>
   );
 };
@@ -150,6 +175,14 @@ export const MatterLabsIcon: React.FC<JSX.IntrinsicElements['svg']> = () => {
         // Logo is dark navy; render it white so it stays visible on the dark bg.
         className="brightness-0 invert"
       />
+    </Link>
+  );
+};
+
+export const Micro1Icon: React.FC<JSX.IntrinsicElements['svg']> = () => {
+  return (
+    <Link href="https://www.micro1.ai/" rel="noopener noreferrer" target="_blank">
+      <Image src={micro1Logo} alt="micro1" width={24} height={24} priority={false} loading="lazy" />
     </Link>
   );
 };

@@ -18,7 +18,7 @@ const Header: React.FC = () => {
               Sergio Martínez / zkzoomer
             </div>
             <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-sm text-gray-11 md:mt-1 md:text-base">
-              <span>Senior ZK/Protocol Engineer</span>
+              <span>Backend &amp; Blockchain Engineer</span>
               <span className="flex items-center gap-1.5 text-xs text-gray-10 md:text-sm">
                 <MapPin className="h-3.5 w-3.5 shrink-0" />
                 Spain (CET)

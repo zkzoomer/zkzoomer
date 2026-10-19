@@ -5,15 +5,35 @@ import { Accordion } from '@/components/ui';
 const skillGroups = [
   {
     name: 'Core',
-    items: ['ZK', 'Rollups', 'zkVMs', 'Ethereum', 'EVM'],
+    items: [
+      'Backend engineering',
+      'Distributed systems',
+      'Ethereum',
+      'State machines',
+      'EVM',
+      'DeFi',
+      'Rollups',
+      'ZK',
+    ],
   },
   {
     name: 'Programming',
-    items: ['Rust', 'Solidity', 'Circom', 'Python', 'TypeScript'],
+    items: ['Rust', 'Python', 'TypeScript', 'Solidity'],
+  },
+  {
+    name: 'Backend',
+    items: [
+      'Tokio / async Rust',
+      'PostgreSQL / SQL',
+      'RPC APIs',
+      'Database migrations',
+      'Persistence',
+      'Integration tests',
+    ],
   },
   {
     name: 'Tools',
-    items: ['Git', 'Docker', 'Linux'],
+    items: ['Git', 'Docker', 'Linux', 'CI/CD'],
   },
   {
     name: 'Languages',

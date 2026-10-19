@@ -1,3 +1,3 @@
 **gm**
 
-zk/protocol engineer -- [zkzoomer.io](https://zkzoomer.io)
+backend & blockchain engineer -- [zkzoomer.io](https://zkzoomer.io)

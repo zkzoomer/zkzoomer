@@ -10,11 +10,20 @@ const WorkExperience: React.FC = () => {
       name="Work"
       items={[
         {
+          symbol: <LogoIcon.Micro1 />,
+          name: 'Expert, AI Trainer',
+          description: 'Micro1, Contractor',
+          summary:
+            'Designing vulnerability remediation tasks and automated tests to train and evaluate AI models.',
+          location: 'Remote',
+          dates: '2026',
+        },
+        {
           symbol: <LogoIcon.MatterLabs />,
           name: 'Senior Protocol Engineer',
-          description: 'Matter Labs',
+          description: 'Matter Labs, Engineering Team · Rust/Backend Infrastructure',
           summary:
-            'DRI for the ZKsync v29 upgrade, coordinating contract and server work for native interoperability. Productionized protocol changes across contracts, server, APIs, and integration tests while turning release branches into focused PRs.',
+            'Led ZKsync v29 interoperability upgrade delivery, coordinating Rust backend and smart contract changes. Implemented execution and state logic, backward-compatible database migrations across storage, synchronization, execution, and API layers, and end-to-end integration tests.',
           location: 'Remote',
           dates: '2025-2026',
           githubLink: 'https://github.com/matter-labs/',
@@ -87,21 +96,30 @@ const WorkExperience: React.FC = () => {
         },
         {
           symbol: <LogoIcon.TermStructure />,
-          name: 'ZK Protocol Engineer',
-          description: 'Term Structure',
+          name: 'Blockchain Engineer',
+          description: 'Term Structure, Blockchain / ZK Team',
           summary:
-            'Designed protocol logic and implemented a custom zkVM and blockchain components for a DeFi lending and borrowing platform.',
+            'Designed an upgradeable fixed-rate lending platform with offchain matching and onchain settlement. Modelled financial state transitions and invariants, built a custom zkVM execution engine, and integrated the system into an end-to-end lending and borrowing protocol.',
           location: 'Taiwan (R.O.C.)',
           dates: '2023-2024',
           githubLink: 'https://github.com/term-structure/',
           githubLinkLabel: 'View Term Structure GitHub organization',
         },
         {
+          symbol: <LogoIcon.Alteia />,
+          name: 'Software Engineering Intern',
+          description: 'Alteia, Computer Vision Team',
+          summary:
+            'Built a computer vision pipeline classifying components in electrical infrastructure from drone footage.',
+          location: 'France',
+          dates: '2023',
+        },
+        {
           symbol: <LogoIcon.Airbus />,
           name: 'Software Engineering Intern',
-          description: 'Airbus Defence and Space',
+          description: 'Airbus Defence and Space, Computer Vision Team · Flight Test Department',
           summary:
-            'Developed a software simulation tool for evaluating different lidar sensors under flight test scenarios.',
+            'Built a software simulation tool for evaluating different lidar sensors under flight test scenarios.',
           location: 'Spain',
           dates: '2021',
           githubLink: 'https://github.com/zkzoomer/lidsim',
