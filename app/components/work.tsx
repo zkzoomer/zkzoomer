@@ -14,7 +14,7 @@ const WorkExperience: React.FC = () => {
           name: 'Expert, AI Trainer',
           description: 'Micro1, Contractor',
           summary:
-            'Designing vulnerability remediation tasks and automated tests to train and evaluate AI models.',
+            'Designing vulnerability remediation tasks and automated tests to train and evaluate frontier AI models.',
           location: 'Remote',
           dates: '2026',
         },
