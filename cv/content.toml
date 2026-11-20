@@ -1,0 +1,123 @@
+name = "Sergio Martínez"
+contact = "Spain | [sergio@zkzoomer.io](mailto:sergio@zkzoomer.io) | [**zkzoomer.io**](https://zkzoomer.io/) | [**github.com/zkzoomer**](https://github.com/zkzoomer) | [linkedin.com/in/sergiomartc](https://www.linkedin.com/in/sergiomartc/)"
+summary = "Backend and blockchain engineer with 3+ years of experience designing and building financial infrastructure, spanning smart contracts, distributed systems, and backend services. Experience with execution logic, database migrations, APIs, and end-to-end integration across complex codebases. Background in lending, collateral management, and settlement workflows, with an emphasis on correctness and maintainability."
+
+[[sections]]
+heading = "Professional Experience"
+
+[[sections.entries]]
+title = "Senior Protocol Engineer at Matter Labs"
+location = "Remote"
+subtitle = "Engineering Team, Rust/Backend Infrastructure"
+dates = "Mar 2025 – Jul 2026"
+bullets = [
+    "Led ZKsync v29 interoperability upgrade delivery, coordinating Rust backend and smart contract changes.",
+    "Implemented Rust execution and state logic for protocol upgrades, including integration testing.",
+    "Implemented backward-compatible DB schema changes across storage, sync., execution, and API layers.",
+    "Broke upgrade branches into focused PRs, improving code review, integration tests, and release reliability.",
+    "Open source PRs: server [**#4221**](https://github.com/matter-labs/zksync-era/pull/4221), [**#4730**](https://github.com/matter-labs/zksync-era/pull/4730), [**#4769**](https://github.com/matter-labs/zksync-era/pull/4769), [**#4756**](https://github.com/matter-labs/zksync-era/pull/4756), [**#4608**](https://github.com/matter-labs/zksync-era/pull/4608); contract contributions on: [**#1419**](https://github.com/matter-labs/era-contracts/pull/1419), [**#1947**](https://github.com/matter-labs/era-contracts/pull/1947).",
+]
+
+[[sections.entries]]
+title = "Blockchain Engineer at [Term Structure](https://ts.finance)"
+location = "Taipei, Taiwan (R.O.C.)"
+subtitle = "Blockchain / ZK Team"
+dates = "Aug 2023 – Oct 2024"
+bullets = [
+    "Designed an upgradeable fixed-rate lending platform with offchain matching and onchain settlement.",
+    "Modelled financial state transitions and invariants covering lending, borrowing, collateral, and settlement.",
+    "Designed and built a custom zkVM execution engine for verifiable execution of protocol state transitions.",
+    "Integrated multiple system components into a complete end-to-end lending and borrowing protocol.",
+]
+
+[[sections.entries]]
+title = "Software Engineering Intern at Alteia"
+location = "Toulouse, France"
+subtitle = "Computer Vision Team"
+dates = "Feb – Jul 2023"
+bullets = [
+    "Built a computer vision pipeline classifying components in electrical infrastructure from drone footage.",
+]
+
+[[sections.entries]]
+title = "Grantee for the Ethereum Foundation"
+location = "Remote"
+subtitle = "Privacy and Scaling Explorations, [Semaphore](https://semaphore.pse.dev/)"
+dates = "Jan – May 2023"
+bullets = [
+    "Built a full-stack privacy-preserving and verifiable application using the EF’s Semaphore protocol. [Link⤴](https://github.com/zkzoomer/bq2)",
+]
+
+[[sections.entries]]
+title = "Software Engineering Intern at Airbus Defence and Space"
+location = "Madrid, Spain"
+subtitle = "Computer Vision Team, Flight Test Department"
+dates = "Feb – Jul 2021"
+bullets = [
+    "Built a software simulation tool for evaluating different lidar sensors under flight test scenarios. [Link⤴](https://github.com/zkzoomer/lidsim)",
+]
+
+[[sections]]
+heading = "Education"
+
+[[sections.entries]]
+title = "ISAE-SUPAERO"
+location = "Toulouse, France"
+subtitle = "MSc in Aerospace Engineering. Major: Embedded Systems"
+dates = "2021 – 2023"
+bullets = [
+    "Researched ZK-based scaling solutions for embedded blockchains, published as an IEEE paper. [Link⤴](https://ieeexplore.ieee.org/document/10316965)",
+]
+
+[[sections.entries]]
+title = "Polytechnic University of Madrid"
+location = "Madrid, Spain"
+subtitle = "BSc in Aerospace Engineering. Major: Aerospace Sciences and Technologies"
+dates = "2016 – 2021"
+bullets = [
+    "GPA: 8/10, top 5%. Special distinction in 8 subjects covering Math, Physics, and Computer Science.",
+]
+
+[[sections]]
+heading = "Selected Projects, Grants & Recognition"
+compact = true
+
+[[sections.entries]]
+title = "Micro1 Expert, AI Trainer"
+dates = "Sep 2026 (Ongoing)"
+bullets = [
+    "Contractor designing vulnerability remediation tasks and automated tests to train and evaluate AI models.",
+]
+
+[[sections.entries]]
+title = "Selected Participant, Succinct ZK Residency"
+dates = "Sep – Oct 2024"
+bullets = [
+    "ZK residency with builders from across the industry, built an SP1-based verifiable auction protocol. [Link⤴](https://github.com/succinctlabs/zk-residency/blob/main/projects/zk-auction/zk-auction.md)",
+]
+
+[[sections.entries]]
+title = "3x Hackathon Winner"
+title_detail = "([ETHGlobal Paris](https://ethglobal.com/showcase/minamix-dz9gc), [Istanbul](https://ethglobal.com/showcase/recursive-gaming-90co4); [Filecoin Web3 Infinity](https://devpost.com/software/dorsia-club))"
+dates = "2022 – 2023"
+
+[additional]
+heading = "Additional Information"
+languages_heading = "Languages:"
+languages = [
+    "Spanish: native",
+    "English: bilingual (Cambridge C2, 220/230)",
+    "French B1",
+]
+notes = [
+    "**Regulatory Awareness:** AML/CFT, MiCA, DORA",
+    "**Tools:** Git, Docker, Linux, CI/CD",
+]
+skills_heading = "Technical Skills:"
+skills = [
+    "Rust, Python, TypeScript, Solidity",
+    "Tokio, async Rust, PostgreSQL, SQL, RPC APIs",
+    "Database migrations, persistence, integration tests",
+    "Distributed systems, state machines, settlement",
+    "Digital assets, DLT, Ethereum/EVM, DeFi, ZK",
+]
